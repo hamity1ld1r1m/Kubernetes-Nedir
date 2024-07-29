@@ -1,0 +1,76 @@
+Cluster Upgrade (Master Node)
+
+kubectl drain k8s-master --ignore-daemonsets
+
+sudo vim /etc/apt/sources.list.d/kubernetes.list
+
+deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ / --> Bu dosyayı açtığınızda, aşağıdaki satırı ekleyin veya mevcutsa güncelleyin
+
+Paket bilgilerini güncelleyin
+
+sudo apt update
+
+kubeadm Yükseltme
+
+sudo apt-cache madison kubeadm
+sudo apt-get install kubeadm=1.29.0-1.1
+
+Kubeadm ile Master Node'u Yükseltme
+
+sudo kubeadm upgrade plan v1.29.0
+sudo kubeadm upgrade apply v1.29.0
+
+kubelet Yükseltme ve Yeniden Başlatma
+
+sudo apt-get install kubelet=1.29.0-1.1
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+
+Master Node'u Tekrar Kullanıma Açma
+
+kubectl uncordon k8s-master
+
+Cluster Upgrade (Worker Node)
+
+kubectl drain k8s-worker --ignore-daemonsets
+
+Kubernetes Paket Deposu Ekleme ve Güncelleme
+
+sudo vim /etc/apt/sources.list.d/kubernetes.list
+
+deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ / --> Bu dosyayı açtığınızda, aşağıdaki satırı ekleyin veya mevcutsa güncelleyin
+
+sudo apt update
+
+kubeadm ve kubelet Yükseltme
+
+sudo apt-cache madison kubeadm
+sudo apt-get install kubeadm=1.29.0-1.1
+sudo kubeadm upgrade node
+sudo apt-get install kubelet=1.29.0-1.1
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+
+Worker Node'u Tekrar Kullanıma Açma
+
+kubectl uncordon k8s-worker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

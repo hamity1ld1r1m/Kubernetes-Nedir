@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ru-ployment
+  name: ru-deployment
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: ru-deployment
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ru-deployment
+    spec:
+      containers:
+      - image: nginx:1.22
+        name: nginx

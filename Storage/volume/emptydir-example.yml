@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: emptydir-example
+spec:
+  containers:
+  - name: my-container
+    image: alpine
+    volumeMounts:
+    - mountPath: /data
+      name: my-emptydir
+  volumes:
+  - name: my-emptydir
+    emptyDir: {}

@@ -1,0 +1,13 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: hamit-rolebinding
+  namespace: hamit
+subjects:
+- kind: ServiceAccount
+  name: hamit-sa
+  namespace: hamit
+roleRef:
+  kind: Role
+  name: hamit-role
+  apiGroup: rbac.authorization.k8s.io

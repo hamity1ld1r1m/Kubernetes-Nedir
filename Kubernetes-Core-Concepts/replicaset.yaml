@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset
+  labels:
+    tur: egitim-replicaset
+spec:
+  template:
+    metadata:
+      name: replicaset
+      labels:
+        tur: egitim-replicaset
+    spec:
+      containers:
+      - name: replicaset
+        image: nginx:latest
+  replicas: 3
+  selector:
+    matchLabels:
+      tur: egitim-replicaset

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hamit-cm
+data:
+  APP_COLOR: pink
+  APP_MODE: prod

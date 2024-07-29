@@ -1,0 +1,92 @@
+Özel anahtar oluşturun
+
+openssl genrsa -out hamit.key 2048
+
+Sertifika isteği oluşturun
+
+openssl req -new -key hamit.key -out hamit.csr
+
+Sertifika İstek Dosyasını Base64'e Çevirme
+
+cat hamit.csr | base64 | tr -d "\n"
+
+CSR Dosyası Oluşturma
+
+vi hamit.yaml
+
+
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: hamit
+spec:
+  request: <base64-encoded-csr>
+  signerName: kubernetes.io/kube-apiserver-client
+  expirationSeconds: 86400
+  usages:
+  - client auth
+
+kubectl apply -f hamit.yaml
+
+CSR'yi Onaylama
+
+kubectl certificate approve hamit
+
+Sertifikayı Alma ve Kaydetme
+
+kubectl get csr hamit -o jsonpath='{.status.certificate}' | base64 -d > hamit.crt
+
+Rol Oluşturma
+
+kubectl create role developer --verb=create --verb=get --verb=list --verb=update --verb=delete --resource=pods
+
+Rol Bağlantısı Oluşturma
+
+kubectl create rolebinding developer-binding-hamit --role=developer --user=hamit --namespace=default
+
+Kubeconfig Dosyasını Ayarlama
+
+kubectl config set-credentials hamit --client-key=hamit.key --client-certificate=hamit.crt --embed-certs=true
+kubectl config set-context hamit --cluster=kubernetes --user=hamit
+
+Kubeconfig İçeriğini Görüntüleme ve Kullanma
+
+kubectl config get-contexts
+kubectl config use-context hamit
+
+Kubernetes kaynaklarını görüntüleyin
+
+kubectl get pods
+
+Yetkilendirme kontrolü yapın
+
+kubectl auth can-i get nodes -A
+kubectl auth can-i --list
+
+Kullanıcı Hesabı Oluşturma
+
+sudo adduser hamit --disabled-password
+sudo su - hamit
+
+Kubeconfig Dosyasını Oluşturma
+
+touch $HOME/.kube/config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

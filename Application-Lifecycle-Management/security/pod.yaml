@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hamit-pod
+  namespace: hamit
+spec:
+  containers:
+  - image: bibinwilson/docker-kubectl:latest
+    name: kubectl
+  serviceAccountName: hamit-sa

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: staticpod
+  labels:
+    app: staticpod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest

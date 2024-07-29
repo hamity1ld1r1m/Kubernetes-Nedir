@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod
+spec:
+  initContainers:
+    - name: init-migrate
+      image: migrate-image
+      command: ['sh', '-c', 'echo "Running database migrations"; sleep 10']
+  containers:
+    - name: main-app
+      image: main-app-image
+      ports:
+        - containerPort: 80
+

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: r-deployment
+  name: r-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: r-deployment
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: r-deployment
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.22
+
