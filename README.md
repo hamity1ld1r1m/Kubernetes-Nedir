@@ -40,9 +40,8 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 - [Private Pod](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/private-pod.yml)
 
 ## Storage
-- [PersistentVolumes and Claims](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/pv&pvc)
 - [Volume](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/volume)
-
+- [PersistentVolumes and Claims](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/pv&pvc)
 ## Networking
 - [DNS](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/dns.yaml)
 
