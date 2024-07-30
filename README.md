@@ -39,7 +39,7 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 - [YAML Backup](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/05_Cluster_Maintenance/.yaml-backup.md)
 
 ## Security
-- [CSR & RBAC ile Authentication & Authorization](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/CSR&BAC ile Authentication & Authorization.md)
+- [CSR & RBAC ile Authentication & Authorization](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/CSR&BAC-ile-Authentication&Authorization.md)
 - [Cluster Roles & RoleBindings](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/06_Security/Cluster%20Roles%20&%20RoleBindings%20with%20Service%C2%A0Accounts)
 - [Network Policy](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/06_Security/Network%20Policy)
 - [Private Pod](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/private-pod.yml)
@@ -54,7 +54,7 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 ## Networking
 - [DNS](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/dns.yaml)
 - [Ingress](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/Ingress)
-- [Helm & MetalLB](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/Ingress/Ingress Kurulumu.md)
+- [Helm & MetalLB](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/Ingress/Ingress-Kurulum.md)
 
 ## Daha Fazla Bilgi
 - [Kubernetes Nedir? - Medium Makalesi](https://medium.com/@hamityldrm/kubernetes-nedir-b1baeebe211c)
