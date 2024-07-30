@@ -1,4 +1,4 @@
-# Kubernetes Nedir?
+# Kubernetes: Konteyner Yönetiminde Temel Kavramlar ve İleri Düzey Özellikler
 Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendiren kullanılan popüler bir açık kaynaklı container orchestration (konteyner yönetimi) sistemidir.
 
 ## Kubernetes Core Concepts
