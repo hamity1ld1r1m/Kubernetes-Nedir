@@ -7,6 +7,10 @@ openssl genrsa -out hamit.key 2048
 ```sh
 openssl req -new -key hamit.key -out hamit.csr
 ```
+## Sertifika İstek Dosyasını Base64'e Çevirme
+```sh
+cat hamit.csr | base64 | tr -d "\n"
+```
 ## CSR Dosyası Oluşturma
 ```yaml
 apiVersion: certificates.k8s.io/v1
@@ -20,6 +24,7 @@ spec:
   usages:
   - client auth
 ```
+*`<base64-encoded-csr>`  kısmını, `hamit.csr` dosyasının base64 kodu ile değiştirin*
 ## CSR'yi Onaylama
 ```sh
 kubectl certificate approve hamit
