@@ -1,11 +1,11 @@
 ## Metrics Server Kurulum
 
 1. **Metrics Server'ı Yükleme:**
-   ```sh
-   kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```sh
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 2. **Deployment'ı Düzenleme:**
-   ```sh
+ ```sh
    kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 Aşağıdaki satırları `spec: containers:` bölümüne ekleyin veya mevcutsa güncelleyin:
