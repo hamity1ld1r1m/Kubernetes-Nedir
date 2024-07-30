@@ -24,7 +24,7 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 - [Schedule Pod](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/schedule-pod.yaml)
 
 ## Logging & Monitoring
-- [Metric Server](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/03_Logging_&_Monitoring/metricserver.txt)
+- [Metric Server](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/03_Logging_&_Monitoring/metricserver.md)
 
 ## Application Lifecycle Management
 - [Commands & Arguments](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/04_Application_Lifecycle_Management/commands-args.yaml)
@@ -34,11 +34,12 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 - [Security](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/04_Application_Lifecycle_Management/security)
 
 ## Cluster Maintenance
-- [Cluster Upgrade](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/05_Cluster_Maintenance/Cluster-Upgrade-(Master-Node-Worker-Node).txt)
-- [ETCD Backup](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/05_Cluster_Maintenance/ETCD-BACKUP.txt)
+- [Cluster Upgrade](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/05_Cluster_Maintenance/Cluster-Upgrade-(Master-Node-Worker-Node).md)
+- [ETCD Backup](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/05_Cluster_Maintenance/ETCD-BACKUP.md)
+- [YAML Backup](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/05_Cluster_Maintenance/.yaml-backup.md)
 
 ## Security
-- [CSR & RBAC ile Authentication & Authorization](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/CSR&BAC%20ile%20Authentication%20&%20Authorization.txt)
+- [CSR & RBAC ile Authentication & Authorization](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/CSR&BAC ile Authentication & Authorization.md)
 - [Cluster Roles & RoleBindings](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/06_Security/Cluster%20Roles%20&%20RoleBindings%20with%20Service%C2%A0Accounts)
 - [Network Policy](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/06_Security/Network%20Policy)
 - [Private Pod](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/06_Security/private-pod.yml)
