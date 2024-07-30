@@ -53,6 +53,8 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 - [CronJob](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/cronjob.yml)
 ## Networking
 - [DNS](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/dns.yaml)
+- [Ingress](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/Ingress)
+- [Helm & MetalLB](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/Ingress/Ingress Kurulumu.md)
 
 ## Daha Fazla Bilgi
 - [Kubernetes Nedir? - Medium Makalesi](https://medium.com/@hamityldrm/kubernetes-nedir-b1baeebe211c)
