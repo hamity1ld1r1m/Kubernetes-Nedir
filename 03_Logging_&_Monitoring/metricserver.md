@@ -3,8 +3,8 @@
 ### Master Node
 
 1. **Master Node'u Boşaltın:**
-   ```sh
-   kubectl drain k8s-master --ignore-daemonsets
+```sh
+kubectl drain k8s-master --ignore-daemonsets
 ```
 2. **Kubernetes Paket Deposu Dosyasını Güncelleyin:**
 
@@ -14,8 +14,8 @@
 Bu dosyayı açtığınızda, aşağıdaki satırı ekleyin veya mevcutsa güncelleyin:
 
 ```plaintext
-deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ / ```
-
+deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /
+```
 
 3. **Paket Bilgilerini Güncelleyin:**
 ```sh
@@ -53,8 +53,8 @@ deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io
 ### Worker Node
 
 1. **Worker Node'u Boşaltın:**
-   ```sh
-   kubectl drain k8s-worker --ignore-daemonsets
+```sh
+kubectl drain k8s-worker --ignore-daemonsets
 ```
 2. **Kubernetes Paket Deposu Dosyasını Güncelleyin:**
 
@@ -64,7 +64,8 @@ deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io
 Bu dosyayı açtığınızda, aşağıdaki satırı ekleyin veya mevcutsa güncelleyin:
 
 ```plaintext
-deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ / ```
+deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /
+```
 
 3. **Paket Bilgilerini Güncelleyin:**
 ```sh
