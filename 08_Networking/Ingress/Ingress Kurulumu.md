@@ -1,8 +1,7 @@
 # NGINX Ingress Controller’ı Helm ile Kurma Adımları
 **Helm** uygulamasının Ubuntu 22.04 ortamında kurulumu adımlarına buradan ulaşabilirsiniz.
 
-
-**1:** helm kurulumu
+## 1. Helm Kurulumu 
 
 ```shell
  curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
@@ -22,8 +21,7 @@ sudo apt-get install helm
 ```
 
 
-**2:** metallb kurulumu
-## MetalLB’yi yüklemek için aşağıdaki adımları izleyin
+## **2:** MetalLB Kurulumu
 ### kube-proxy yapılandırmasını düzenleyin
 ```shell
 kubectl edit configmap -n kube-system kube-proxy
@@ -96,7 +94,7 @@ kubectl apply -f metallb-config.yaml
 ```
 
 
-**3:** Ingress-NGINX Kurulumu
+## **3:** Ingress-NGINX Kurulumu
 
 ```shell
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
@@ -118,7 +116,7 @@ kubectl get deployments
 $ kubectl --namespace default get services -o wide -w ingress-controller-ingress-nginx-controller
 ```
 
-# Portları test etmek için, HTTP 404 hatası döndürmesi gerekiyor.
+### Portları test etmek için, HTTP 404 hatası döndürmesi gerekiyor.
 
 ```shell
 curl http://192.168.199.51:31035
