@@ -10,10 +10,14 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 - [ClusterIP Service](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/01_Kubernetes_Core_Concepts/clusterip-svc.yaml)
 - [NodePort Service](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/01_Kubernetes_Core_Concepts/nodeport-svc.yaml)
 - [Namespaces](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/01_Kubernetes_Core_Concepts/namespaces.yaml)
+- [Liveness Probe](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/01_Kubernetes_Core_Concepts/liveness.yml)
+- [Readiness Probe](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/01_Kubernetes_Core_Concepts/readiness.yml)
 
 ## Scheduling
 - [DaemonSets](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/daemonset.yaml)
 - [Node Selectors](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/nodeselector.yaml)
+- [Node Affinity](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/node-affinity.yml)
+- [Pod Affinity](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/pod-affinity.yml)
 - [Resource Requirements & Limits](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/resource-limited-pod.yaml)
 - [Tolerations](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/tolerated-pod.yml)
 - [Static Pods](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/02_Scheduling/staticpod.yaml)
@@ -42,6 +46,10 @@ Container (konteyner) tabanlı uygulamaları yöneten, dağıtan ve ölçeklendi
 ## Storage
 - [Volume](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/volume)
 - [PersistentVolumes and Claims](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/pv&pvc)
+- [Storage Class](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/storageclass)
+- [Stateful Set](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/statefulset.yml)
+- [Job](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/job.yml)
+- [CronJob](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/tree/main/07_Storage/cronjob.yml)
 ## Networking
 - [DNS](https://github.com/hamity1ld1r1m/Kubernetes-Nedir/blob/main/08_Networking/dns.yaml)
 
