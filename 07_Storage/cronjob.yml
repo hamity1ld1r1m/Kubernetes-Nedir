@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: date-hello-cronjob
+spec:
+  schedule: "0 3 * * *"  # Her gün saat 03:00'te çalışacak
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: date-hello
+            image: busybox
+            command:
+            - /bin/sh
+            - -c
+            - |
+              date
+              echo "Hello from the Kubernetes cluster"
+          restartPolicy: OnFailure

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: my-database
+spec:
+  serviceName: "my-database-service"
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-database
+  template:
+    metadata:
+      labels:
+        app: my-database
+    spec:
+      containers:
+      - name: my-database
+        image: my-database-image:latest
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - name: my-database-storage
+          mountPath: /var/lib/my-database
+  volumeClaimTemplates:
+  - metadata:
+      name: my-database-storage
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 10Gi
