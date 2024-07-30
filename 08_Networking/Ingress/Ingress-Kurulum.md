@@ -98,6 +98,7 @@ kubectl apply -f metallb-config.yaml
 
 ```shell
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+```
 ```shell
 helm repo update
 ```
@@ -214,7 +215,7 @@ sudo nano /etc/hosts
 192.168.18.1  hamityldrm.com
 ```
 
-###Tarayıcınızdan http://hamityldrm.com adresine gidin ya da aşağıdaki komutu çalıştırın
+### Tarayıcınızdan http://hamityldrm.com adresine gidin ya da aşağıdaki komutu çalıştırın
 
 ```shell
 curl http://hamityldrm.com
