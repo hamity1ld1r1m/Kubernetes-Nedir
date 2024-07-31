@@ -67,7 +67,7 @@ sipcalc 192.168.18.11/24
 ```
 ### MetalLB yapılandırmasını oluşturun
 ```shell
- metallb-config.yaml
+metallb-config.yaml
  ```
 ```yaml
 apiVersion: metallb.io/v1beta1
