@@ -4,10 +4,10 @@
 ## 1. Helm Kurulumu 
 
 ```shell
- curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
 ```
 ```shell
- sudo apt-get install apt-transport-https --yes
+sudo apt-get install apt-transport-https --yes
 ```
 
 ```shell
@@ -114,7 +114,7 @@ kubectl get deployments
 
 ```shell
 # HTTP ve HTTPS portlarını görmek için
-$ kubectl --namespace default get services -o wide -w ingress-controller-ingress-nginx-controller
+kubectl --namespace default get services -o wide -w ingress-controller-ingress-nginx-controller
 ```
 
 ### Portları test etmek için, HTTP 404 hatası döndürmesi gerekiyor.
